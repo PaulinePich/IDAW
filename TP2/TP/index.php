@@ -13,14 +13,12 @@ require_once('template_header.php');
         <div class="header">
             <h1> Mon site Pro de POPo</h1>
         </div>
+
+
         <div class="sidebar">
-        <nav class="menu">
-            <ul>
-            <li><a id="currentpage" href="index.html">Accueil</a></li>
-            <li><a href="CV.html">CV</a></li>
-            <li><a href="projet.html">Projet</a></li>
-            </ul>
-            </nav>
+        <?php
+        require_once('template_menu.php');
+        ?>
         </div>
         <div class="content">
             <p> Welcome to my profesional site</p>
