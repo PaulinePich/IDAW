@@ -1,13 +1,13 @@
 <?php
-    require_once("header.php");
-    require_once("menu.php");
+    require_once("template_header.php");
+    require_once("template_menu.php");
     $currentPageId = 'accueil';
     if(isset($_GET['page'])) {
     $currentPageId = $_GET['page'];
 }
 ?>
-<header class="bandeau_haut">
-    <h1 class="titre">Hector Durand</h1>
+<header class="header">
+    <h1 class="titre">Pauline Pichon</h1>
     </header>
         <?php
         renderMenuToHTML($currentPageId);
@@ -22,5 +22,5 @@
 ?>
 </section>
     <?php
-        require_once("footer.php");
+        require_once("template_footer.php");
 ?>
