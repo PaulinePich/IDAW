@@ -11,7 +11,7 @@
         <p>DOUBLE DIPLOME </p>
         <ol>
             <li>Canada, Montréal</li>
-            <li>Ecole Technique Supérieure</li>
+            <li>Ecole Technologie Supérieure</li>
             <li>Technologie de l'information</li>
         </ol>
         </br>    
