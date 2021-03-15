@@ -1,31 +1,26 @@
 <?php
-require_once('template_header.php');
+    require_once("header.php");
+    require_once("menu.php");
+    $currentPageId = 'accueil';
+    if(isset($_GET['page'])) {
+    $currentPageId = $_GET['page'];
+}
 ?>
-
-<html>
-    <head>
-        <title> Accueil </title>
-        <meta charset = "utf-8">
-        <link rel ="stylesheet" href= "style1.css">
-    </head>
-    <body>
-        <div class="page">
-        <div class="header">
-            <h1> Mon site Pro de POPo</h1>
-        </div>
-
-
-        <div class="sidebar">
+<header class="bandeau_haut">
+    <h1 class="titre">Hector Durand</h1>
+    </header>
         <?php
-        require_once('template_menu.php');
-        ?>
-        </div>
-        <div class="content">
-            <p> Welcome to my profesional site</p>
-        </div>
-        <div class="footer">
-            <p> Cours d'IDAW </p>
-        </div>
-    </div>
-    </body>
-</html>
+        renderMenuToHTML($currentPageId);
+?>
+<section class="corps">
+    <?php
+        $pageToInclude = $currentPageId . ".php";
+        if(is_readable($pageToInclude))
+        require_once($pageToInclude);
+            else
+        require_once("error.php");
+?>
+</section>
+    <?php
+        require_once("footer.php");
+?>

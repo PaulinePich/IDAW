@@ -17,6 +17,7 @@ require_once('template_header.php');
         <div class="sidebar">
         <?php
         require_once('template_menu.php');
+        renderMenuToHTML('Cv');
         ?>
         </div>
         
@@ -43,7 +44,8 @@ require_once('template_header.php');
 
         </div>
         <div class="footer">
-            <p> Cours d'IDAW </p>
+            <?php
+        require_once('template_footer.php');?>
         </div>
     </div>
     </body>
