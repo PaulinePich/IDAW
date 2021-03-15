@@ -1,33 +1,17 @@
-<?php
-require_once('template_header.php');
-?>
-
-<html>
-    <head>
-        <title> Accueil </title>
-        <meta charset = "utf-8">
-        <link rel ="stylesheet" href= "style1.css">
-    </head>
-    <body>
-        <div class="page">
-        <div class="header">
-            <h1> Mon site Pro de POPo</h1>
-        </div>
-
-
-        <div class="sidebar">
-        <?php
-        require_once('template_menu.php');
-        renderMenuToHTML('index');
-        ?>
-        </div>
-        <div class="content">
-            <p> Welcome to my profesional site</p>
-        </div>
-        <div class="footer">
-        <?php
-        require_once('template_footer.php');?>
-        </div>
-    </div>
-    </body>
-</html>
+<h1>Bienvenue sur mon site pro</h1>
+<div class="row">
+  <div class="column">
+    <h2>Ecole</h2>
+    <p>IMT Lille Douai</p>
+  </div>
+  
+  <div class="column">
+    <h2>Profil</h2>
+    <p>Serieuse, dynamique et organisée</p>
+  </div>
+  
+  <div class="column">
+    <h2>Centres d'interêts</h2>
+    <p>Tennis, Vélo, Voyage : Chine, Mexique, Egypte, Etats Unis</p>   
+  </div>
+</div>
