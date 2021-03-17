@@ -1,3 +1,5 @@
+<h1>Login</h1>
+
 <form id="login_form" action="connected.php" method="GET">
     <table>
         <tr>
