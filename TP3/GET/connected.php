@@ -1,19 +1,19 @@
+<h1>Connection</h1>
+
 
 <?php
+
+    // on simule une base de données
     $users = array(
     // login => password
         'riri' => 'fifi',
-        'yoda' => 'maitrejedi',
-        'popo' => 'pich'); 
-    
+        'yoda' => 'maitrejedi' );
     $login = "anonymous";
     $errorText = "";
     $successfullyLogged = false;
-
-    if(isset($_POST['login']) && isset($_POST['password'])) {
-        $tryLogin=$_POST['login'];
-        $tryPwd=$_POST['password'];
-
+    if(isset($_GET['login']) && isset($_GET['password'])) {
+        $tryLogin=$_GET['login'];
+        $tryPwd=$_GET['password'];
         // si login existe et password correspond
         if( array_key_exists($tryLogin,$users) && $users[$tryLogin]==$tryPwd ) {
             $successfullyLogged = true;
@@ -27,5 +27,4 @@
     } else {
         echo "<h1>Bienvenu ".$login."</h1>";
     }
-
-    ?>
+?>

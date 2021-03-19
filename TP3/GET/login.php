@@ -1,7 +1,4 @@
-<!doctype html>
-<html>
-
-        <form id="login_form" action="connected.php" method="POST">
+<form id="login_form" action="connected.php" method="GET">
     <table>
         <tr>
             <th>Login :</th>
@@ -17,6 +14,4 @@
         </tr>
     </table>
 </form>
-    </body>
-</html>
 
