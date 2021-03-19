@@ -1,3 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Page de connexion</title>
+        <h1> Connection <h1>
+        <meta charset = "utf-8">
+        <link rel ="stylesheet" href= "style.css">
+    </head>
+
+
+
+<body>
 <form id="login_form" action="connected.php" method="POST">
     <table>
         <tr>
@@ -14,5 +26,7 @@
         </tr>
     </table>
 </form>
+</body>
 
+</html>
 

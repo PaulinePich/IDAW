@@ -30,7 +30,7 @@
     }
 
     if ($_SESSION == array()){
-        require_once("login.php");
+        require_once("index.php");
     }
     else{
         $currentLogin = $_SESSION['login'];
