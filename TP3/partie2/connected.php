@@ -1,6 +1,7 @@
 <?php
         $login = "anonymous";
 
+        //database connexion
             $servername = 'localhost';
             $username = 'root';
             $password = 'root';
@@ -34,8 +35,8 @@
                 }
             }
         } 
-            else
-            $errorText = "Merci d'utiliser le formulaire de Connection<br>";
+        else
+        $errorText = "Merci d'utiliser le formulaire de Connection<br>";
         
         if(!$successfullyLogged) {
         echo $errorText;
@@ -43,6 +44,5 @@
         //echo "<h1>Bienvenu ".$login."</h1>";
         $_SESSION['login'] = $login;
         }
-    
+       
     ?>
- 
