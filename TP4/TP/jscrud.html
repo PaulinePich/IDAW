@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SitePro Pauline </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../TP/Site/style1.css">
+  </head>
+  <body >
+    <div class="header">
+        <h1 >Mon Site Professionel</h1>
+            
+              <a href="../TP/Site/francais/accueil.php" >Accueil</a>
+              <a href="../TP/Site/francais/projet.php">Mes projet</a>
+              <a href="../TP/Site/francais/CV.php">Mon CV</a>
+              <a href="../TP/Site/francais/info_technique.php">Contact</a>
+              <a id="current" href="../Exo3/jscrud.html">CRUD</a>
+            </div>
+
+            <div class="page">
+                <table>
+                    <tr>
+                      <td>Nom</td>
+                      <td>Prénom</td>
+                      <td>Date de naissance</td>
+                      <td>Remarque</td>
+                    </tr>
+                    <tr>
+                      <td>Pichon</td>
+                      <td>Pauline</td>
+                      <td>21</td>
+                      <td>paupau.pichon@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <td>riri</td>
+                      <td>fifi</td>
+                      <td>27</td>
+                      <td>loulou@gmail.com</td>
+                    </tr>
+                  </table>
+
+                  <p></p>
+            </div>
+
+            <div class="footer">
+
+            <form onsubmit="onFormSubmit();" autocomplete="off">
+    <tr>
+        <th>Nom</th>
+        <br>
+        <td><input type="text" name="nom"></td>
+        <br>
+    </tr>
+    <tr>
+        <th>Prénom</th>
+        <br>
+        <td><input type="text" name="prenom"></td>
+        <br>
+    </tr>
+    <tr>
+        <th>Date de naissance</th>
+        <br>
+        <td><input type="date" name="date"></td>
+        <br>
+    </tr>
+    <tr>
+        <th>Remarque</th>
+        <br>
+        <td><input type="text" name="remarque"></td>
+        <br>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="submit" value="Submit" /></td>
+    </tr>
+</div>
+
+
+    </form>
+    <script>
+    function onFormSubmit() {
+    // prevent the form to be sent to the server
+    event.preventDefault();
+    }
+    </script>
