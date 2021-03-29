@@ -1,4 +1,12 @@
-<?php
+
+  <h1> Inscription </h1>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+  <?php
             $servname = 'localhost';
             $dbname = 'projet';
             $user = 'root';
@@ -18,8 +26,15 @@
                 $sql = "INSERT INTO projet (login,password,sexe, age, sport)
                 VALUES ('$a','$b','$c', '$d','$e')";
                 $dbco->exec($sql);
+             
+                
+                
+               
                 echo 'Inscription réussie';
                 
+                
+                
+                  
             }
             catch(PDOException $e){
                 echo "Erreur : " . $e->getMessage();
@@ -27,7 +42,8 @@
                 
                 ?>
     
-    <p>Votre login est <?php echo $_POST['NewLogin']?>
-    <a href=login.php>Connexion</a>
+    <p>Votre login est <?php echo $_POST['NewLogin']?></p>
+            </br>
+    <a href='index.php'>Connexion</a>
 
-?>
+

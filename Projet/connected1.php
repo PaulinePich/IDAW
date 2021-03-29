@@ -3,12 +3,12 @@
 $login = "anonymous";
 
             $servername = 'localhost';
-            $dbname = 'pauline';
+            $dbname = 'projet';
             $username = 'root';
             $password = 'root';
             
             try{
-                $dbco = new PDO("mysql:host=$servername;dbname=$dbname", $user, $password);
+                $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
                 $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 
                 $sql = "SELECT * from login";
