@@ -5,7 +5,7 @@
 
 <?php
         $servname = 'localhost';
-        $dbname = 'aliments';
+        $dbname = 'projet';
         $user = 'root';
         $pass = 'root';
         
@@ -19,7 +19,7 @@
   
 
 
-            $sql = "INSERT INTO aliments(name, type, calories)
+            $sql = "INSERT INTO aliment(name, type, calories)
             VALUES ('$b','$c', '$d')";
             $dbco->exec($sql);
          
@@ -41,6 +41,6 @@
 
 <p>Le nouvel aliment est <?php echo $_POST['name']?></p>
             </br>
-    <a href='aliments.php'>Mes aliments</a>
+    <a href='../FrontEnd/aliments.php'>Mes aliments</a>
 
 

@@ -5,7 +5,7 @@
 </div>
 
 
-<form id="ajout" action="ajout_aliment_validation.php" method="POST">
+<form id="ajout" action="../BackEnd/ajout_aliment_validation.php" method="POST">
     <table>
     <tr>
 <th>Nom </th>

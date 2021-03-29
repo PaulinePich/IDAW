@@ -15,7 +15,7 @@
     $users = array(
     // login => password
         'pauline' => 'pich',
-        'nassim' => 'bouaz',
+        'nassim' => 'nass',
         'user' => 'user'); 
     
     $login = "anonymous";

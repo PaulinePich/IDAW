@@ -5,7 +5,7 @@
 </div>
 
 
-<form id="inscription" action="validation.php" method="POST">
+<form id="inscription" action="../BackEnd/validation.php" method="POST">
     <table>
     <tr>
 <th>Login :</th>

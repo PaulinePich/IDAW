@@ -23,7 +23,7 @@
                 $e=$_POST['sport'];
 
 
-                $sql = "INSERT INTO projet (login,password,sexe, age, sport)
+                $sql = "INSERT INTO utilisateur (login,password,sexe, age, sport)
                 VALUES ('$a','$b','$c', '$d','$e')";
                 $dbco->exec($sql);
              
@@ -44,6 +44,6 @@
     
     <p>Votre login est <?php echo $_POST['NewLogin']?></p>
             </br>
-    <a href='index.php'>Connexion</a>
+    <a href='../FrontEnd/index.php'>Connexion</a>
 
 
