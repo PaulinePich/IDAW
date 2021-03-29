@@ -22,24 +22,47 @@
                 </tr>
             </thead>
             <tbody id="alimentsTableBody">
-            </tbody>
-        </table>
+            <?php
 
-
-        <?php
-        echo 'test';
             $servname = 'localhost';
             $dbname = 'projet';
             $user = 'root';
             $pass = 'root';
-            
-                $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
-                $dbco->prepare('SELECT name, type, calories FROM aliment');
-                
- 
-                //$aliments= $dbco->fetchAll();
-                //var_dump($aliments);
-    
-        ?>
+           
+          
+            try
+            {
+              // On se connecte à MySQL
+              $bdd = new PDO("mysql:host=$servname;dbname=$dbname;charset=utf8",  $user, $pass);
+            }
+            catch(Exception $e)
+            {
+              // En cas d'erreur, on affiche un message et on arrête tout
+                    die('Erreur : '.$e->getMessage());
+            }
+
+
+            $reponse = $bdd->query('SELECT name,type,calories FROM aliment');
+
+            while ($donnees = $reponse->fetch())
+            {
+            ?>
+                <tr>
+                  <td><?php echo $donnees['name']; ?></td>
+                  <td><?php echo $donnees['type']; ?></td>
+                  <td><?php echo $donnees['calories']; ?></td>
+                  <td><button>Editer</button> <button>Supprimer</button></td>
+                </tr>
+            <?php
+            }
+
+            $reponse->closeCursor(); // Termine le traitement de la requête
+
+            ?>
+            </tbody>
+        </table>
+
+
+
 </body>
   </html>
