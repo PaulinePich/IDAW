@@ -30,6 +30,9 @@
     </table>
 </form>
 
+
+
+
 <a href="inscription.php" class="btn btn-outline-dark" tabindex="-1" role="button" aria-disabled="true">M'inscrire</a>
 </body>
 

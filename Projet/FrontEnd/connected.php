@@ -39,11 +39,8 @@
     } else {
  
         echo "<h1>Bienvenue sur votre session ".$login."</h1>";
-        echo "<a href='information.php' > Mes Informations </a>"; 
-        echo "</br>";
-        echo "<a href='aliments.php' > Renseigner des aliments </a>"; 
-        echo "</br>";
-        echo "<a href='historique.php' > Historique de mon alimentation </a>"; 
+        echo "<a href='index2.php' > Accéder à mon espace </a>"; 
+        
         
     }
 
