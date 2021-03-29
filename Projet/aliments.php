@@ -37,7 +37,7 @@
         </script>
 
 
-
+<a href='ajout_aliment.php'> Ajout aliment </a>
 
 </body>
   </html>
