@@ -1,41 +1,32 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="header">
 <h1> Ajout aliment </h1>
-
-    <link rel="stylesheet" href="style.css">
-
-
-<?php
-        $servname = 'localhost';
-        $dbname = 'aliments';
-        $user = 'root';
-        $pass = 'root';
-        
-        try{
-            $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
-            $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            
-            $b=$_POST['name'];
-            $c=$_POST['type'];
-            $d=$_POST['calories'];
-  
+</div>
 
 
-            $sql = "INSERT INTO projet (name, type, calories)
-            VALUES ('$b','$c', '$d')";
-            $dbco->exec($sql);
-         
-            
-            
-           
-            echo 'Ajout aliment réussi';
-            
-            
-            
-              
-        }
-        catch(PDOException $e){
-            echo "Erreur : " . $e->getMessage();
-          }
-            
-            ?>
+<form id="ajout" action="ajout_aliment_validation.php" method="POST">
+    <table>
+    <tr>
+<th>Nom </th>
+<td><input type="text" name="name"></td>
+    </tr>
+    
+    <tr>
+<th>Type</th>
+<td><input type="type" name="type"></td>
+    </tr>
 
 
+    <tr>
+<th>Calories</th>
+<td><input type="calories" name="calories"></td>
+    </tr>
+   
+    <tr>
+<th></th>
+<td><input type="submit" value="Ajout" /></td>
+    </tr>
+
+</table>
+</form>
