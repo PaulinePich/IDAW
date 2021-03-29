@@ -12,6 +12,34 @@
 
   <body>
   
+  <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Calorie pour 100g</th>
+                    <th scope="col">CRUD</th>
+                </tr>
+            </thead>
+            <tbody id="alimentsTableBody">
+            </tbody>
+        </table>
 
+
+        <?php
+        echo 'test';
+            $servname = 'localhost';
+            $dbname = 'projet';
+            $user = 'root';
+            $pass = 'root';
+            
+                $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
+                $dbco->prepare('SELECT name, type, calories FROM aliment');
+                
+ 
+                //$aliments= $dbco->fetchAll();
+                //var_dump($aliments);
+    
+        ?>
 </body>
   </html>
