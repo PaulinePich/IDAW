@@ -1,7 +1,7 @@
 
   <h1> Inscription </h1>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../FrontEnd/style.css">
 
 
 

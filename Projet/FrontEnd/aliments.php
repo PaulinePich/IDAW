@@ -11,30 +11,45 @@
   </head>
 
   <body>
+
   
 <div class="page">
 
-<form id="addStudentForm" action="" onsubmit="onFormSubmit();">
-<div class="form-group row">
-                <label for="inputDate" class="col-sm-2 col-form-label">Date d'ajout</label>
-                <div class="col-sm-3">
-                    <input type="date" class="form-control" id="inputDate" >
-                </div>
-</div>
+<table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Calorie pour 100g</th>
+                    <th scope="col">CRUD</th>
+                </tr>
+            </thead>
+            <tbody id="alimentsTableBody">
+            </tbody>
+        </table>
+
+
+        <?php
+        echo 'test';
+            $servname = 'localhost';
+            $dbname = 'projet';
+            $user = 'root';
+            $pass = 'root';
+            
+                $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
+                $dbco->prepare('SELECT name, type, calories FROM aliment');
+                
+ 
+                //$aliments= $dbco->fetchAll();
+                //var_dump($aliments);
+    
+        ?>
+
 </div>
 
 
 <script>
-  function onFormSubmit() {
-            event.preventDefault();
-            date = $("#inputDate").val();
-                        <td>${newStudent.date}</td>
-                        
-                    
- 
-            }
-  
-        </script>
+</script>
 
 
 <a href='ajout_aliment.php'> Ajout aliment </a>

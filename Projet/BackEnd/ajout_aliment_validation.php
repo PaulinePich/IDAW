@@ -1,6 +1,6 @@
 <h1> Ajout aliment </h1>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../FrontEnd/style.css">
 
 
 <?php
