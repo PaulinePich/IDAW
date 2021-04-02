@@ -26,7 +26,7 @@
         
         <form id="alimentForm">
             <div class="form-group row">
-                <label for="name">Nom</label>
+                <label for="nom">Nom</label>
                 <input type="text" class="form-control" name="nom" id="inputnom">
             </div>
             <div class="form-group row">
