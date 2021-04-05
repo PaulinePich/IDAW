@@ -4,9 +4,8 @@
 
     function deleteAliment(){
         require_once('config.php');
-        //On établit la connexion
+       
         $conn = mysqli_connect($servername, $username, $password,$database);
-        //On vérifie la connexion
         if($conn->connect_error){
         die('Erreur : ' .$conn->connect_error);
         }

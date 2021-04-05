@@ -1,4 +1,4 @@
-let urlBackendPrefix = "http://localhost/GitHub/IDAW/projet/backend/"
+let urlBackendPrefix = "http://localhost/GitHub/IDAW/Projet/New/backend/"
     let idligne = 0; 
     let aliments = [];
     let currentEditedFoodId =-1;
@@ -86,7 +86,7 @@ let urlBackendPrefix = "http://localhost/GitHub/IDAW/projet/backend/"
     let ag = $("#inputAG").val();
     let sel = $("#inputSel").val();
     let potassium = $("#inputPotassium").val();
-//$("check").val();
+
     let aliment={};
     aliment.nom = nom;
     aliment.type = type;
@@ -99,7 +99,7 @@ let urlBackendPrefix = "http://localhost/GitHub/IDAW/projet/backend/"
     aliment.sel = sel;
     aliment.potassium = potassium;
     console.log(aliments[idligne-1]);
-    //aliment.idsql= (aliments[idligne-1].idsql);
+   
     
     aliment.id= idligne;
 if (nom!=''){

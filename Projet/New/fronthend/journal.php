@@ -7,12 +7,11 @@
         <script src="js/journal.js" async></script>
         
         <title>Journal</title>
-        <link rel="stylesheet" href="css/style.css">
     
 
 </head>
-        <h1 id="titre">Journal de Bord</h1>
-        <p>Rentrez votre dernier repas</p>
+        <h1 id="titre"> Mon journal</h1>
+        <p>Mon dernier repas</p>
         <p id="enCours"></p>
     <form id="addRepasForm" action="" onsubmit="ajoutJournal();">
         <div class="form-group row">

@@ -2,7 +2,7 @@
 //database connexion
 $servername = 'localhost';
 $username = 'root';
-$password = '';
+$password = 'root';
 $database='projet';
 
 ?>

@@ -2,7 +2,7 @@
     require_once("config.php");
     
     $a=$_POST['typeA'];
-    //echo $a;
+    
 
     try{
         $dbco = new PDO("mysql:host=$servername;dbname=$database;charset=utf8", $username, $password);

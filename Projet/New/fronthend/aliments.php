@@ -6,7 +6,6 @@
         <script src="js/aliments.js" async></script>
         
         <title>Aliments</title>
-        <link rel="stylesheet" href="css/style.css">
     
 <script src='js/aliments.js' async></script>
 </head>

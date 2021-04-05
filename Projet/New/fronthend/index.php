@@ -3,9 +3,6 @@
     <head>
         <meta charset='utf-8'>
         
-        
-        <script src="js/index.js" async></script>
-        
         <title>Journal</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
