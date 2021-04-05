@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         
         
-        <script src="js/journal.js" async></script>
+        <script src="js/index.js" async></script>
         
         <title>Journal</title>
         <link rel="stylesheet" href="css/style.css">
