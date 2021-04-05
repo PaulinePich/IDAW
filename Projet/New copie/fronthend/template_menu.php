@@ -2,7 +2,7 @@
 function renderMenuToHTML($currentPageId) {
 $mymenu = array(
 'index' => array('Accueil'),
-'historique' => array('Historique'),
+'profil' => array('Profil'),
 'aliments' => array('Aliments'),
 'journal'=> array( 'Mon journal' )
 );

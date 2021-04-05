@@ -1,7 +1,8 @@
 <?php
+//database connexion
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$database='projet';
 
-$servername = "localhost";
-$dbname = "projet";
-$username = "root";
-$password = "root";
 ?>
