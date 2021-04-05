@@ -30,7 +30,7 @@
 
         $infosAliments = $dbco->prepare("SELECT date, heure, nom, typeRepas, 
         quantite, energie, proteines, glucides, lipides, sucres, AG, sel, potassium, commentaires
-        FROM aliments2 as a, comporepas as r, historique as h 
+        FROM aliments as a, comporepas as r, historique as h 
         WHERE h.heure=r.heureR AND h.date=r.dateR AND r.IdAliment=a.IdAliment
         ".$type."
         ".$interval."");

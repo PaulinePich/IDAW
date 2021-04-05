@@ -11,17 +11,7 @@
         die('Erreur : ' .$conn->connect_error);
         }
         $user=16;
-    /*$aliments=$_POST['aliments'];
-    $quantites=$_POST['quantites'];
-    $insert='';
-    for ($i=0; $i<$_POST['nbaliment']; $i++){
-        $insert=$insert."INSERT INTO comporepas ( IdRepas,IdAliment, quantite)
-        VALUES ((SELECT IdRepas 
-        FROM historique 
-        WHERE date='".$_POST['date']."' AND heure='".$_POST['time']."'), 
-        (SELECT IdAliment FROM aliments2
-        WHERE nom='".$aliments[$i]."'), '".$quantites[$i]."');";
-        }*/
+    
         
         $sql1 = "INSERT INTO historique (date, heure, IdRepas, typeRepas, IdUtilisateur, commentaires) 
         VALUES ('".$_POST['date']."', 

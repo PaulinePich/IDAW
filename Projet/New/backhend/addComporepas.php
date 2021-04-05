@@ -16,7 +16,7 @@ addComporepas();
     for ($i=0; $i<$_POST['nbaliment']; $i++){
         $insert="INSERT INTO comporepas ( IdRepas,IdAliment, quantite, heure, date)
         VALUES (NULL, 
-        (SELECT IdAliment FROM aliments2
+        (SELECT IdAliment FROM aliments
         WHERE nom='".$aliments[$i]."'), '".$quantites[$i]."', '".$_POST['time']."', '".$_POST['date']."');";
         mysqli_query($conn,$insert);
         echo $insert;

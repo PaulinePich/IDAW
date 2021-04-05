@@ -10,7 +10,7 @@
         if($conn->connect_error){
         die('Erreur : ' .$conn->connect_error);
         }
-        $sql = "UPDATE aliments2
+        $sql = "UPDATE aliments
         SET nom ='".$_POST['nom']."',
         type='".$_POST['type']."',
         energie='".$_POST['energie']."',
