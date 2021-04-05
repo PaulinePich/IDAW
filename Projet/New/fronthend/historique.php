@@ -40,6 +40,3 @@
     <tbody id="historiqueTableBody">
     </tbody>
 </table>
-<div id="boutonStat" class="row justify-content-center"></div>
-        <h1>Statistique nutritionnel</h1>
-            <div id="stat"></div>
