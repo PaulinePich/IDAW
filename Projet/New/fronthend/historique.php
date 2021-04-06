@@ -33,7 +33,6 @@
             <th scope="col">Date</th>
             <th scope="col">Heure</th>
             <th scope="col">Type de repas</th>
-            <th scope="col">Commentaires</th>
             <th scope="col">Aliments</th>
         </tr>
     </thead>

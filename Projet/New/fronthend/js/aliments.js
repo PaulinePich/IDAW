@@ -36,18 +36,12 @@ let urlBackendPrefix = "http://localhost/GitHub/IDAW/Projet/New/backend/"
                         console.log(response);
                         console.log(response[0]);
             $.each(response, function(i, a){
-                aliment.ag=a.AG;
                 aliment.idsql = a.IdAliment;
                 aliment.nom = a.nom;
                 aliment.type = a.type;
-                aliment.energie = a.energie;
+                aliment.calories = a.calories;
                 aliment.proteines = a.proteines;
                 aliment.glucides = a.glucides;
-                aliment.lipides = a.lipides;
-                aliment.sucres = a.sucres;
-                aliment.ag = a.AG;
-                aliment.sel = a.sel;
-                aliment.potassium = a.potassium;
                 aliment.idsql = a.IdAliment;
                 aliments.push(aliment);
                 afficheUnAliment(aliment);
@@ -62,14 +56,9 @@ let urlBackendPrefix = "http://localhost/GitHub/IDAW/Projet/New/backend/"
         $("#alimentsTableBody").append('<tr id='+newFood.id+'> <td> '
         +newFood.nom+'  </td> <td> '
         +newFood.type+'  </td><td> '
-        +newFood.energie+'(kcal/100g)  </td><td> '
+        +newFood.calories+'(kcal/100g)  </td><td> '
         +newFood.proteines+'  </td><td> '
-        +newFood.glucides+'  </td><td> '
-        +newFood.lipides+'  </td><td> '
-        +newFood.sucres+'  </td><td> '
-        +newFood.ag+'  </td><td> '
-        +newFood.sel+'  </td><td> '
-        +newFood.potassium+'  </td> <td><button onclick=edit('+idligne+')>edit</button><button onclick=remove('+idligne+')>remove</button></td></tr>');
+        +newFood.glucides+'  </td><td> <button onclick=edit('+idligne+')>edit</button><button onclick=remove('+idligne+')>remove</button></td></tr>');
         idligne++;}
 
     let currentligne=-1;
@@ -78,26 +67,16 @@ let urlBackendPrefix = "http://localhost/GitHub/IDAW/Projet/New/backend/"
     event.preventDefault();
     let nom = $("#inputAliment").val();
     let type = $("#inputType").val();
-    let energie = $("#inputEnergie").val();
+    let calories = $("#inputCalories").val();
     let proteines = $("#inputProteines").val();
     let glucides = $("#inputGlucides").val();
-    let lipides = $("#inputLipides").val();
-    let sucres = $("#inputSucres").val();
-    let ag = $("#inputAG").val();
-    let sel = $("#inputSel").val();
-    let potassium = $("#inputPotassium").val();
 
     let aliment={};
     aliment.nom = nom;
     aliment.type = type;
-    aliment.energie = energie;
+    aliment.calories = calories;
     aliment.proteines = proteines;
     aliment.glucides = glucides;
-    aliment.lipides = lipides;
-    aliment.sucres = sucres;
-    aliment.ag = ag;
-    aliment.sel = sel;
-    aliment.potassium = potassium;
     console.log(aliments[idligne-1]);
    
     
@@ -112,14 +91,9 @@ if (nom!=''){
     $("#alimentsTableBody").append('<tr id='+idligne+'><td>'
     +aliments[idligne].nom+'</td><td>'
     +aliments[idligne].type+'</td><td>'
-    +aliments[idligne].energie+'</td><td>'
+    +aliments[idligne].calories+'</td><td>'
     +aliments[idligne].proteines+'</td><td>'
-    +aliments[idligne].glucides+'</td><td>'
-    +aliments[idligne].lipides+'</td><td>'
-    +aliments[idligne].sucres+'</td><td>'
-    +aliments[idligne].ag+'</td><td>'
-    +aliments[idligne].sel+'</td><td>'
-    +aliments[idligne].potassium+'</td> <td><button onclick=edit('
+    +aliments[idligne].glucides+'</td><td><button onclick=edit('
     +idligne+')>edit</button><button onclick=remove('
     +idligne+')>remove</button></td></tr>') ;
     console.log(aliments[idligne]);
@@ -139,15 +113,9 @@ if (nom!=''){
     $('<tr id='+currentligne+'><td>'
     +aliments[currentligne].nom+'</td><td>'
     +aliments[currentligne].type+
-    +aliments[currentligne].energie+'</td><td>'
+    +aliments[currentligne].calories+'</td><td>'
     +aliments[currentligne].proteines+'</td><td>'
-    +aliments[currentligne].glucides+'</td><td>'
-    +aliments[currentligne].lipides+'</td><td>'
-    +aliments[currentligne].sucres+'</td><td>'
-    +aliments[currentligne].ag+'</td><td>'
-    +aliments[currentligne].sel+'</td><td>'
-    +aliments[currentligne].potassium+
-        '</td> <td><button onclick=edit('
+    +aliments[currentligne].glucides+'</td><td><button onclick=edit('
         +currentligne+')>edit</button><button onclick=remove('
         +currentligne+')>remove</button></td></tr>').appendTo('#'+currentligne) ;
         console.log(aliments[currentligne]);

@@ -31,11 +31,6 @@
             <th scope="col">Energie</th>
             <th scope="col">Protéines (g/100 g)</th>
             <th scope="col">Glucides (g/100 g)</th>
-            <th scope="col">Lipides (g/100 g)</th>
-            <th scope="col">Sucres (g/100 g)</th>
-            <th scope="col">Acides Gras Saturés (g/100 g)</th>
-            <th scope="col">Sel (g/100 g)</th>
-            <th scope="col">Potassium (mg/100 g)</th>
         </tr>
     </thead>
     <tbody id="alimentsTableBody">
@@ -77,36 +72,7 @@
                 <input type="text" class="form-control" id="inputGlucides" >
             </div>
         </div>
-        <div class="form-group row">
-            <label for="inputLipides" class="col-sm-2 col-form-label">Lipides (g/100 g)</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputLipides" >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputSucres" class="col-sm-2 col-form-label">Sucres (g/100 g)</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputSucres" >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputAG" class="col-sm-2 col-form-label">Acides gras saturés (g/100 g)</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputAG" >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputSel" class="col-sm-2 col-form-label">Sel (g/100 g)</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputSel" >
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputPotassium" class="col-sm-2 col-form-label">Potassium (mg/100 g)</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputPotassium" >
-            </div>
-        </div>
+        
         <div class="form-group row">
             <span class="col-sm-2"></span>
             <div class="col-sm-2" >
