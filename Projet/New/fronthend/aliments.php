@@ -76,7 +76,7 @@
         <div class="form-group row">
             <span class="col-sm-2"></span>
             <div class="col-sm-2" >
-                <button type="submit" class="btn btn-primary form-control">Submit</button>
+                <button type="submit" class="btn btn-primary form-control">Ajouter aliment</button>
             </div>
         </div>
     </form>

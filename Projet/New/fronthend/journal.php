@@ -31,52 +31,31 @@
                 <option value="Petit Déjeuner">Petit Déjeuner</option>
                 <option value="Déjeuner">Déjeuner</option>
                 <option value="Diner">Diner</option>
-                <option value="Collation matin">Collation matin</option>
-                <option value="Collation après midi">Collation après midi</option>
-                <option value="Brunch">Brunch</option>
-                <option value="Grignotage">Grignotage</option>
+                <option value="Goûter">Goûter</option>
             <select>
         </div>
         <div class="form-group row">
-            <label for="searchTypeAliment" class="col-sm-2 col-form-label">Type d'aliment n°1</label>
-            <select id="typeSelectionAliment1" name="typeSelectionAliment1">
+            <label for="searchTypeAliment" class="col-sm-2 col-form-label">Type d'aliment</label>
+            <select id="typeSelectionAliment" name="typeSelectionAliment">
             <select>
-        </div>
+        </div>*
         <div class="form-group row">
-                <span class="col-sm-2"></span>
-                <div class="col-sm-2" >
-                    <button onclick="selectTypeAliment(1);" class="btn btn-primary form-control">Valider</button>
-                </div>
-        </div>
-        <div class="form-group row">
-        <label for="searchAliment" class="col-sm-2 col-form-label">Aliment consommé n°1</label>
-            <select id="inputAliment1" name="inputAliment1">
+        <label for="searchAliment" class="col-sm-2 col-form-label">Aliment consommé</label>
+            <select id="inputAliment" name="inputAliment">
                 
             <select>
         </div>
         <div class="form-group row" id=quantite>
-            <label for="inputQuantite1" class="col-sm-2 col-form-label">Quantité d'aliment n°1 (en g)</label>
+            <label for="inputQuantite" class="col-sm-2 col-form-label">Quantité d'aliment (en g)</label>
             <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputQuantite1" >
+                <input type="text" class="form-control" id="inputQuantite" >
             </div>
         </div>
         <div class="form-group row" id="repere"></div>
         <div class="form-group row">
                 <span class="col-sm-2"></span>
                 <div class="col-sm-2" >
-                    <button onclick="ajoutChamps();" class="btn btn-primary form-control">Ajouter aliments</button>
+                    <button onclick="" class="btn btn-primary form-control">Ajouter aliments</button>
                 </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputCommentaires" class="col-sm-2 col-form-label">Commentaires sur le repas</label>
-            <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputCommentaires" >
-            </div>
-        </div>
-        <div class="form-group row">
-            <span class="col-sm-2"></span>
-            <div class="col-sm-2" >
-                <button type="submit" class="btn btn-primary form-control">Submit</button>
-            </div>
         </div>
     </form>

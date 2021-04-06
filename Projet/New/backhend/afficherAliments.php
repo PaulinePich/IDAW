@@ -9,7 +9,7 @@
         $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
 
-        $infosAliments = $dbco->prepare("SELECT * FROM aliments WHERE type='".$a."'");
+        $infosAliments = $dbco->prepare("SELECT * FROM aliment WHERE type='".$a."'");
         $infosAliments->execute();
         
 

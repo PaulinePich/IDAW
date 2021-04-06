@@ -7,7 +7,7 @@
         $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
 
-        $infosAliments = $dbco->prepare("SELECT type FROM aliments GROUP BY type");
+        $infosAliments = $dbco->prepare("SELECT type FROM aliment GROUP BY type");
         $infosAliments->execute();
         
 

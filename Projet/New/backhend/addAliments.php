@@ -13,18 +13,12 @@
         die('Erreur : ' .$conn->connect_error);
         }
         $sql = "INSERT INTO aliments(nom, type,
-        energie, proteines, glucides, lipides, sucres, AG, sel, code_type, potassium) 
+        calories, proteines, glucides) 
         VALUES ("."'".$_POST['nom']."',".
         "'".$_POST['type']."',".
-        "'".$_POST['energie']."',".
+        "'".$_POST['calories']."',".
         "'".$_POST['proteines']."',".
-        "'".$_POST['glucides']."',".
-        "'".$_POST['lipides']."',".
-        "'".$_POST['sucres']."',".
-        "'".$_POST['ag']."',".
-        "'".$_POST['sel']."',".
-        "'0000',".
-            "'".$_POST['potassium']."')";
+        "'".$_POST['glucides'].."')";
 
         echo $sql;
 

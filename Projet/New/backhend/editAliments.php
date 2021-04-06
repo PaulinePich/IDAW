@@ -12,14 +12,9 @@
         $sql = "UPDATE aliments
         SET nom ='".$_POST['nom']."',
         type='".$_POST['type']."',
-        energie='".$_POST['energie']."',
+        calories='".$_POST['calories']."',
         proteines='".$_POST['proteines']."',
-        glucides='".$_POST['glucides']."',
-        lipides='".$_POST['lipides']."',
-        sucres='".$_POST['sucres']."',
-        AG='".$_POST['ag']."',
-        sel='".$_POST['sel']."',
-        potassium='".$_POST['potassium']."'
+        glucides='".$_POST['glucides']."'
         WHERE idAliments=".$_POST['idsql']."";
         echo $sql;
 
